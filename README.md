@@ -1,6 +1,6 @@
 # auto-reivernet
 
-MAC spoofing for unlimited free Reivernet 30 minute Internet sessions
+Obtain unlimited free Reivernet sessions by MAC spoofing.
 
 ## Description
 
@@ -11,6 +11,9 @@ the 24-hour restriction is bypassed.
 This module randomizes the specified interface's MAC address. Then, the
 Reivernet portal is logged into with the specified guest name and room
 number. Finally, the free 30 minute plan is selected and submitted.
+
+Optionally, the process can be automatically initiated periodically. That is,
+as the free sessions expire.
 
 Only Mac OS X is supported.
 
