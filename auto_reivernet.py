@@ -27,7 +27,7 @@ def set_mac(interface, mac):
 def get_default_mac(interface):
     """Return the 'burned-in' MAC address."""
     output = subprocess.check_output(
-        ['networksetup', '-getmacaddress', interface])
+        ['networksetup', '-getmacaddress', interface], universal_newlines=True)
     match_object = re.search(
         r'^Ethernet Address: ([\w:]+)'.format(interface), output)
     if match_object:
